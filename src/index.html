@@ -1,0 +1,33 @@
+<html>
+  <head>
+<title>Maison</title>
+  </head>
+  <body>
+    
+    <div id='menu'></div>
+    <script src="./index.js"></script>
+    <script>
+    var dataStoreHP = {}
+    dataStoreHP.menuN1 = [
+    {
+      title: 'string', // remplacer les chaines "__SPACE__" par "&nbsp" et "__NL__" par "<br>"
+      url: 'string',
+      imageUrl: 'string',
+      tracking: {
+        refZ: 'string',
+        idc: 'string',
+        category: 'string',
+        action: 'string',
+        label: 'string',
+        other: {
+          track_refZ: 'string' // refZ
+        }
+      },
+      cacheKey: 'string'
+    }
+  ];
+  renderZone(dataStoreHP.menuN1, 'menuN1', 'menu')
+  </script>
+
+  </body>
+</html>

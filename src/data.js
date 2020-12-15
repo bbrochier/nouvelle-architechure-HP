@@ -1,24 +1,26 @@
 const dataStoreHP = {
-  menuOSE: [
-    // Smartphone only
-    {
-      title: 'string', // remplacer les chaines "__SPACE__" par "&nbsp" et "__NL__" par "<br>"
-      url: 'string',
-      imageUrl: 'string',
-      active: 'boolean', // menu a activer selon la page
-      tracking: {
-        refZ: 'string',
-        idc: 'string',
-        category: 'string',
-        action: 'string',
-        label: 'string',
-        other: {
-          track_refZ: 'string' // zid
+  // Menu OSE Smartphone only
+  menuOSE: {
+    cacheKey: 'string',
+    items: [
+      {
+        title: 'string', // remplacer les chaines "__SPACE__" par "&nbsp" et "__NL__" par "<br>"
+        url: 'string',
+        imageUrl: 'string',
+        active: 'boolean', // menu a activer selon la page
+        tracking: {
+          refZ: 'string',
+          idc: 'string',
+          category: 'string',
+          action: 'string',
+          label: 'string',
+          other: {
+            track_refZ: 'string' // zid
+          }
         }
-      },
-      cacheKey: 'string'
-    }
-  ],
+      }
+    ]
+  },
   enteteMaison: {
     title: 'string',
     images: {
@@ -40,61 +42,66 @@ const dataStoreHP = {
     },
     cacheKey: 'string'
   },
-  menuN1: [
-    {
-      title: 'string', // remplacer les chaines "__SPACE__" par "&nbsp" et "__NL__" par "<br>"
-      url: 'string',
-      imageUrl: 'string',
-      tracking: {
-        refZ: 'string',
-        idc: 'string',
-        category: 'string',
-        action: 'string',
-        label: 'string',
-        other: {
-          track_refZ: 'string' // refZ
+  menuN1: {
+    cacheKey: 'string',
+    items: [
+      {
+        title: 'string', // remplacer les chaines "__SPACE__" par "&nbsp" et "__NL__" par "<br>"
+        url: 'string',
+        imageUrl: 'string',
+        tracking: {
+          refZ: 'string',
+          idc: 'string',
+          category: 'string',
+          action: 'string',
+          label: 'string',
+          other: {
+            track_refZ: 'string' // refZ
+          }
         }
-      },
-      cacheKey: 'string'
-    }
-  ],
-  offresMaison: [
-    {
-      title: 'string',
-      subTitle: 'string',
-      image: {
-        defaultUrl: 'string',
-        landscapeUrl: 'string',
-        alt: 'string'
-      },
-      contents: [
-        {
-          title: 'string',
-          description: 'string'
+      }
+    ]
+  },
+  offresMaison: {
+    cacheKey: 'string',
+    items: [
+      {
+        title: 'string',
+        subTitle: 'string',
+        image: {
+          defaultUrl: 'string',
+          landscapeUrl: 'string',
+          alt: 'string'
+        },
+        contents: [
+          {
+            title: 'string',
+            description: 'string'
+          }
+        ],
+        button: {
+          linkTarget: 'string',
+          label: 'string',
+          url: 'string'
+        },
+        tracking: {
+          refZ: 'string',
+          idc: 'string',
+          category: 'string',
+          action: 'string',
+          label: 'string',
+          other: {
+            track_refZ: 'string' // refZ
+          }
         }
-      ],
-      button: {
-        linkTarget: 'string',
-        label: 'string',
-        url: 'string'
-      },
-      tracking: {
-        refZ: 'string',
-        idc: 'string',
-        category: 'string',
-        action: 'string',
-        label: 'string',
-        other: {
-          track_refZ: 'string' // refZ
-        }
-      },
-      cacheKey: 'string'
-    }
-  ],
+      }
+    ]
+  },
   mentionsLegales: {
+    cacheKey: 'string',
     title: 'string',
     description: 'string',
-    notes: [
+    items: [
       {
         title: 'string',
         description: 'string'
@@ -102,6 +109,7 @@ const dataStoreHP = {
     ]
   },
   offreMarchandMaison: {
+    cacheKey: 'string',
     title: 'string',
     description: 'string',
     images: {
@@ -124,10 +132,10 @@ const dataStoreHP = {
       other: {
         track_refZ: 'string' // refZ
       }
-    },
-    cacheKey: 'string'
+    }
   },
   reassuranceEcommerce: {
+    cacheKey: 'string',
     title: 'string',
     items: [
       {
@@ -147,28 +155,29 @@ const dataStoreHP = {
           other: {
             track_refZ: 'string' // refZ
           }
-        },
-        cacheKey: 'string'
+        }
       }
     ]
   },
-  fildAriane: [
-    {
-      label: 'string',
-      url: 'string',
-      tracking: {
-        refZ: 'string',
-        idc: 'string',
-        category: 'string',
-        action: 'string',
+  fildAriane: {
+    cacheKey: 'string',
+    items: [
+      {
         label: 'string',
-        other: {
-          track_refZ: 'string' // refZ
+        url: 'string',
+        tracking: {
+          refZ: 'string',
+          idc: 'string',
+          category: 'string',
+          action: 'string',
+          label: 'string',
+          other: {
+            track_refZ: 'string' // refZ
+          }
         }
-      },
-      cacheKey: 'string'
-    }
-  ]
+      }
+    ]
+  }
 }
 
 export default dataStoreHP
